@@ -1,0 +1,68 @@
+{
+  "zasnubyFiltes": [
+    "Triedenie",
+    "Kategória",
+    "Kovy",
+    "Tvar Prsteňa",
+    "Tvar Kameňov",
+    "Štýly Hlavy Prsteňa",
+    "Štýl Osadenia Kameňa"
+  ],
+  "kategoria": [
+    "Náušnice",
+    "Náramky",
+    "Náhrdelníky",
+    "Prstene",
+    "Náramky na nohu"
+  ],
+  "kovy": [
+    "417 Žlté Zlato (10K)",
+    "417 Biele Zlato (10K)",
+    "417 Ružové Zlato (10K)",
+    "585 Žlté Zlato (14K)",
+    "585 Ružové Zlato (14K)",
+    "585 Biele Zlato (14K)",
+    "750 Žlté Zlato (18K)",
+    "750 Ružové Zlato (18K)",
+    "750 Biele Zlato (18K)",
+    "950 Platina"
+  ],
+  "tvarPrstena": [
+    "Triple",
+    "Contemporary",
+    "Swirl",
+    "Twisted Vine",
+    "Tapered",
+    "Twisted",
+    "Split Tapered",
+    "Square Edge",
+    "Knife Edge",
+    "Single"
+  ],
+  "tvarKamenov": [
+    "Markíza",
+    "Hruška",
+    "Smaragd",
+    "Oválny",
+    "Vankúšikový",
+    "Princezná",
+    "Okrúhly"
+  ],
+  "stylyHlavyPrstena": [
+    "4-Prong",
+    "Bead Single Halo Veľký",
+    "Trojkamenný Center Halo",
+    "Bezel Plný",
+    "Bead Single Halo Malý",
+    "Bezel Polovičný",
+    "Trojkamenný",
+    "6-Prong",
+    "U-Páve Single Halo Malý",
+    "U-Páve Single Halo Veľký",
+    "Dvojité Halo"
+  ],
+  "stylOsadeniaKamena": [
+    "Žiadny Kameň",
+    "U-Páve"
+  ]
+}
