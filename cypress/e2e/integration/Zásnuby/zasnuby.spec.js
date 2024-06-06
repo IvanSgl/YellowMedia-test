@@ -8,8 +8,8 @@ const zasnubyPage = new ZasnubyPage();
 describe('Zasnuby page', () => {
     beforeEach('Intercept requests', () => {
         // Intercept
-        cy.intercept('GET', '/api/v1/pages/engagement-rings').as('engagementRingsRequest')
-        cy.intercept('GET', '/api/v1/pages/engagement').as('engagementRequest')
+        cy.intercept('GET', '/api/v1/pages/engagement-rings').as('engagementRingsRequest');
+        cy.intercept('GET', '/api/v1/pages/engagement').as('engagementRequest');
     });
 
     it('should check responses and filters on "Zasnuby" page', () => {
@@ -37,7 +37,7 @@ describe('Zasnuby page', () => {
         basePage.waitForPageLoaded();
 
         // Check responses
-        cy.wait('@engagementRequest').its('response.statusCode').should('equal', 200)
+        cy.wait('@engagementRequest').its('response.statusCode').should('equal', 200);
         cy.get('@engagementRequest').should(({request, response}) => {
             expect(request.method).to.equal('GET')
             expect(response.statusCode).to.equal(200)
@@ -51,7 +51,7 @@ describe('Zasnuby page', () => {
             expect(response.body.data).to.have.property('slug');
             expect(response.body.data).to.have.property('blocks');
             expect(response.body.data).to.have.property('translations');
-        })
+        });
 
         // Check filters
         basePage.checkElementVisibility(zasnubyPage.filtersColumn);
@@ -61,6 +61,6 @@ describe('Zasnuby page', () => {
         zasnubyPage.checkFilterByTitle(constants.zasnubyFiltes[3], constants.tvarPrstena);
         zasnubyPage.checkFilterByTitle(constants.zasnubyFiltes[4], constants.tvarKamenov);
         zasnubyPage.checkFilterByTitle(constants.zasnubyFiltes[5], constants.stylyHlavyPrstena);
-        zasnubyPage.checkFilterByTitle(constants.zasnubyFiltes[6], constants.stylOsadeniaKamena)
+        zasnubyPage.checkFilterByTitle(constants.zasnubyFiltes[6], constants.stylOsadeniaKamena);
     })
 })

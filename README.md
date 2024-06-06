@@ -21,6 +21,6 @@ This is a home task for Yellow Media.
 5. Check results
 
 ## Results
-![img.png](cypress/e2e/test-runs/img.png)
+![img.png](cypress/screenshots/img.png)
 
 

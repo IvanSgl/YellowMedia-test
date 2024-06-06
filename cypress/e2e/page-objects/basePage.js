@@ -11,11 +11,11 @@ export default class BasePage {
     }
 
     clickElement(selector) {
-        cy.get(selector).first().click()
+        cy.get(selector).first().click();
     }
 
     clickElementByText(selector, text) {
-        cy.get(selector).contains(text).click()
+        cy.get(selector).contains(text).click();
     }
 
     waitForPageLoaded(){
@@ -23,6 +23,6 @@ export default class BasePage {
     }
 
     checkElementVisibility(selector) {
-        cy.get(selector).scrollIntoView().should('be.visible')
+        cy.get(selector).scrollIntoView().should('be.visible');
     }
 }

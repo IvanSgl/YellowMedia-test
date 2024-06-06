@@ -8,11 +8,11 @@ const initialPage = new InitialPage();
 describe('Initial page', () => {
     beforeEach('Intercept requests', () => {
         // Intercept
-        cy.intercept('GET', '/api/v1/products/jednoduchynahrdelnikspismenomnaretiazke').as('abracadabraRequest')
-        cy.intercept('GET', '/api/v1/blocks/product-question-form').as('questionFormRequest')
-        cy.intercept('GET', '/api/v1/blocks/product-ship-return').as('shipReturnRequest')
-        cy.intercept('GET', '/api/v1/blocks/product-ask-question').as('askQuestionRequest')
-        cy.intercept('POST', '/api/v1/wishlists').as('wishlistsRequest')
+        cy.intercept('GET', '/api/v1/products/jednoduchynahrdelnikspismenomnaretiazke').as('abracadabraRequest');
+        cy.intercept('GET', '/api/v1/blocks/product-question-form').as('questionFormRequest');
+        cy.intercept('GET', '/api/v1/blocks/product-ship-return').as('shipReturnRequest');
+        cy.intercept('GET', '/api/v1/blocks/product-ask-question').as('askQuestionRequest');
+        cy.intercept('POST', '/api/v1/wishlists').as('wishlistsRequest');
     });
 
     it('should check responses and filters on "Zasnuby" page', () => {
