@@ -15,7 +15,7 @@ This is a home task for Yellow Media.
    }
    `
 
-   More info about cypress env you cloud read [here](https://docs.cypress.io/guides/guides/environment-variables#Option-2-cypressenvjson)
+   More info about cypress env you could read [here](https://docs.cypress.io/guides/guides/environment-variables#Option-2-cypressenvjson)
 4. Execute test by `npm run e2e`\
     If you need to run in headless mode run `nom run e2e-headless`
 5. Check results
