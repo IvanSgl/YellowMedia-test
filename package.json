@@ -1,22 +1,19 @@
 {
-  "name": "YellowMediaTest",
+  "name": "yellow-media-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "Ivan Shmyhal",
+  "license": "ISC",
   "scripts": {
     "e2e": "npx cypress open",
     "e2e-headless": "npx cypress run --browser=chrome"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxxheorhii/YellowMediaDemo.git"
+    "url": "git+https://github.com/IvanSgl/YellowMedia-test.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/maxxheorhii/YellowMediaDemo/issues"
-  },
-  "homepage": "https://github.com/maxxheorhii/YellowMediaDemo#readme",
+  "homepage": "https://github.com/IvanSgl/YellowMedia-test#readme",
   "devDependencies": {
     "cypress": "^13.11.0"
   }
