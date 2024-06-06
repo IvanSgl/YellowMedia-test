@@ -14,7 +14,7 @@ describe('Zasnuby page', () => {
 
     it('should check responses and filters on "Zasnuby" page', () => {
         // Open Zasnuby page
-        basePage.openZasnubyPage();
+        basePage.clickElement(basePage.zasnubyPage);
 
         // Check responses
         cy.wait('@engagementRingsRequest').its('response.statusCode').should('equal', 200);
@@ -33,7 +33,7 @@ describe('Zasnuby page', () => {
         });
 
         // Open page with rings
-        basePage.openRingsProducts();
+        basePage.clickElement(basePage.ringsProducts);
         basePage.waitForPageLoaded();
 
         // Check responses

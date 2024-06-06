@@ -1,10 +1,9 @@
 import BasePage from "../../page-objects/basePage";
 import {InitialPage} from "../../page-objects/initial-page/initialPage";
-import {ProductPage} from "../../page-objects/product-page/productPage";
+import constants from '../../../fixtures/constants.json'
 
 const basePage = new BasePage();
 const initialPage = new InitialPage();
-const productPage = new ProductPage();
 
 describe('Initial page', () => {
     beforeEach('Intercept requests', () => {
@@ -18,10 +17,10 @@ describe('Initial page', () => {
 
     it('should check responses and filters on "Zasnuby" page', () => {
         // Open Initial page
-        basePage.openInitialPage();
+        basePage.clickElement(basePage.initialPage);
 
         // Open product page
-        initialPage.openProductByName('Náhrdelník Mon Petit');
+        basePage.clickElementByText(initialPage.productItem, constants.productName);
 
         // Check responses
         cy.wait('@abracadabraRequest').its('response.statusCode').should('equal', 200);
@@ -87,7 +86,11 @@ describe('Initial page', () => {
         });
 
         // Add to wishlist
-        productPage.addToWishlist();
+        basePage.clickElementByText(basePage.button, constants.addToWishlist);
+
+        /**
+         * I couldn't find a button to add to the comparison list, it looks like that feature has been removed.
+         */
 
         // Check response
         cy.wait('@wishlistsRequest').its('response.statusCode').should('equal', 200);
@@ -104,6 +107,5 @@ describe('Initial page', () => {
             expect(response.body.data).to.have.property('unique_id');
             expect(response.body.data).to.have.property('baggage');
         });
-
     });
 });
